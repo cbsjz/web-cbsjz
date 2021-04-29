@@ -2,35 +2,64 @@
  * @Author: cbsjz (cbsjz@qq.com) 
  * @Date: 2021-04-28 15:31:12 
  * @Last Modified by: cbsjz
- * @Last Modified time: 2021-04-28 19:24:53
+ * @Last Modified time: 2021-04-30 00:44:35
  */
 
 /* header */
+
+:root {
+    --header-text-coler: #006dfe;
+}
+
 header {
+    padding: 5px;
 }
 
 .header {
     display: inline-block;
+    height: 50px;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--header-text-coler);
 }
 /* header_left */
 .header_left {
-    float: left;
+    /* float: left; */
 }
 
     .header_left_logo {
-        
+        width: 50px;
     }
 
-    .header_left_id {
+        .header_left_logo img {
+            width: 100%;
+            height: 100%;
+        }
 
+    .header_left_id {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        vertical-align: middle;
+        color: var(--header-text-coler);
+        font-weight: bold;
     }
 /* header_right */
 .header_right {
-    display: flex;
-	justify-content: flex-end;
+    float: right;
 }
 
-.header_right nav{
-    list-style: none;
-    
-}
+    .header_right nav{
+        list-style: none;
+    }
+
+        .header_right nav ul {
+            display: inline-block;
+        }
+    .header_hidden-menu {
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
