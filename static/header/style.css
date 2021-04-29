@@ -1,18 +1,19 @@
 /*
- * @Author: cbsjz (cbsjz@qq.com) 
- * @Date: 2021-04-28 15:31:12 
- * @Last Modified by: cbsjz
- * @Last Modified time: 2021-04-30 00:44:35
+ * @Author: cbsjz (cbsjz@qq.com)
+ * @Date: 2021-04-30 03:37:00 
+ * @Last Modified by: cbsjz (cbsjz@qq.com)
+ * @Last Modified time: 2021-04-30 04:12:16
  */
 
 /* header */
 
 :root {
+    --header-text-size: 24px;
     --header-text-coler: #006dfe;
 }
 
 header {
-    padding: 5px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, .5);
 }
 
 .header {
@@ -43,6 +44,7 @@ header {
         height: 50px;
         text-align: center;
         vertical-align: middle;
+        size: var(--header-text-size);
         color: var(--header-text-coler);
         font-weight: bold;
     }
@@ -51,15 +53,28 @@ header {
     float: right;
 }
 
-    .header_right nav{
+    .header_right nav {
         list-style: none;
     }
 
-        .header_right nav ul {
-            display: inline-block;
-        }
-    .header_hidden-menu {
-        background-color: black;
+    .header_menu {
+        display: inline-block;
+    }
+        
+    .header_menu:hover .header_menu-hidden {
+        display: block;
+    }
+    
+    .header_menu-hidden {
+        display: none;
+        background-color: #fff;
         padding: 5px 10px;
         border-radius: 5px;
+        box-shadow: 1px 1px 5px #888888;
+        position: absolute;
+        z-index: 1;
     }
+
+        .header_menu-hidden a {
+            display: block;
+        }

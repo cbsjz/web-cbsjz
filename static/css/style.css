@@ -1,0 +1,16 @@
+/*
+ * @Author: cbsjz 
+ * @Date: 2021-04-30 04:07:51 
+ * @Last Modified by: cbsjz (cbsjz@qq.com)
+ * @Last Modified time: 2021-04-30 04:09:43
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, "PingFang SC", "Microsoft Yahei", sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: grayscale;
+}
