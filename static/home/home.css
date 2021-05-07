@@ -5,11 +5,48 @@
  * @Last Modified time: 2021-05-07 11:54:43
  */
 
- main {
-     
- }
+:root {
+    --home-text-color: #006dfe;
+    --home-text-font-size: 36px;
+    --home-text-font-weight: bold;
+}
 
- .home-main-page {
-     display: flex;
-     justify-items: center;
- }
+main {
+    /* width: 100%; */
+    /* border: 1px solid black; */
+}
+
+.home-main-page {
+	display: flex;
+    justify-content: space-around;
+}
+
+.home-main-page-a-h {
+    color: var(--home-text-color);
+    font-size: var(--home-text-font-size);
+    font-weight: var(--home-text-font-weight);
+}
+
+.home-main-page-b {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.home-main-page-b-left {
+    border: 1px solid green;
+    width: 50%;
+}
+
+.home-main-page-a-list {
+    list-style: none;
+    display: inline-block;
+}
+
+.home-main-page-b-right {
+    border: 1px solid blue;
+    width: 50%;
+}
