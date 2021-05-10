@@ -6,9 +6,10 @@
  */
 
 :root {
-    --home-text-color: #006dfe;
+    --home-textH-color: #006dfe;
+    --home-text-color: #8c99ab;
     --home-textA-font-size: 48px;
-    --home-textB-font-size: 24px;
+    --home-textB-font-size: 20px;
     --home-text-font-weight: bold;
 }
 
@@ -21,6 +22,7 @@ main {
 .home-main-page {
 	display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .home-main-page-a {
@@ -30,16 +32,26 @@ main {
     justify-content: center;
 }
 
-.home-main-page-a-h {
-    color: var(--home-text-color);
+.home-main-page-a > * {
+    margin: 15px 0;
+}
+
+#home-main-page-a-h {
+    color: var(--home-textH-color);
     font-size: var(--home-textA-font-size);
     font-weight: var(--home-text-font-weight);
 }
 
-.home-main-page-a-list {
-    margin: 50px 0;
-    display: flex;
-    justify-content: space-evenly;
+#home-main-page-a-span {
+    color: var(--home-text-color);
+    font-size: var(--home-textB-font-size);
+}
+
+.home-main-page-a-list > * {
+    /* margin: 50px 0; */
+    /* display: flex;
+    justify-content: flex-start; */
+    margin: 0 10px;
 }
 
 .home-main-page-a-list a {
@@ -49,6 +61,11 @@ main {
     height: 24px;
 }
 
+.home-main-page-a-list a:hover {
+    filter: contrast(200%);
+    
+}
+
 .home-main-page-a-list embed {
     width: 24px;
     height: 22px;
@@ -56,10 +73,15 @@ main {
 }
 
 .home-main-page-b {
-    /* width: 50vw;
-    height: 60vh; */
-    display: flex;
-    justify-content: center;
-    /* border: 1px solid black;
-    border-radius: 50px; */
+    width: 40%;
+    height: 800px;
+}
+
+#bongo-cat {
+    display: inline-block;
+    /* transform: scale(1); */
+    position: relative;
+    left: -200px;
+    top: 50px; 
+    /* top: 100px; */
 }
