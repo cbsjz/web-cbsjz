@@ -1,0 +1,59 @@
+/*
+ * @Author: cbsjz (cbsjz@qq.com) 
+ * @Date: 2021-05-18 19:31:46 
+ * @Last Modified by: cbsjz
+ * @Last Modified time: 2021-05-18 21:29:06
+ */
+
+:root {
+    --footer-background: #303846;
+    --footer-text-color: #fff;
+    --footer-textH-size: 18px;
+    --footer-textH-font-weight: bolder;
+    --footer-text-size: 16px;
+    --footer-text-font-weight: 500;
+    --footer-copyright-size: 16px;
+    --footer-copyright-font-weight: 500;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--footer-text-color);
+    font-size: var(--footer-text-size);
+    font-weight: var(--footer-text-font-weight);
+}
+
+footer nav {
+    /* max-width: 1180px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 80px;
+}
+
+footer nav ul {
+    list-style: none;
+    /* margin-left: 20vw; */
+}
+
+footer nav ul h4 {
+    font-size: var(--footer-textH-size);
+    font-weight: var(--footer-textH-font-weight);
+}
+
+footer nav ul li {
+    padding-top: 5px;
+}
+
+.copyright {
+    margin-top: 25px;
+    text-align: center;
+    font-size: var(--footer-copyright-size);
+    font-weight: var(--footer-copyright-font-weight);
+}
